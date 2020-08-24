@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Digital-7 Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Digital-7 Mono'), local('Digital-7-Mono'),
+        url(https://allfont.ru/cache/fonts/digital-7-mono_48b6f9283ab489bdc31ad44d073d6615.woff) format('woff'),
+        url(https://allfont.ru/cache/fonts/digital-7-mono_48b6f9283ab489bdc31ad44d073d6615.ttf) format('truetype');
+}
+
 .main_cont {
   height: 100vh;
   background-color: #3e3e3e;
