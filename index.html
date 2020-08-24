@@ -11,12 +11,12 @@
     <link href="https://allfont.ru/allfont.css?fonts=digital-7-mono" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body onload="timer()">
   <main class="main_cont">
     <div class="clocker">
-      <span class="hours fadeIn">10</span>
+      <span class="hours" id="hr">9</span>
       <span class="dots blink">:</span>
-      <span class="minutes">00</span>
+      <span class="minutes" id="min">00</span>
 
     </div>
   </main>
