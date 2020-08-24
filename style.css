@@ -1,0 +1,26 @@
+.main_cont{
+  height: 100vh;
+  background-color: #e9c0ce;
+  display: flex;
+  font-family: Digital-7 Mono;
+}
+
+.clocker{
+  min-width: 200px;
+  background-color: #ba3636;
+  margin:auto;
+  text-align: center;
+  font-size: 0;
+}
+
+.hours{
+  font-size: 30pt;
+}
+
+.dots{
+  font-size: 32pt;
+}
+
+.minutes{
+  font-size: 30pt;
+}
