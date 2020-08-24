@@ -1,26 +1,72 @@
-.main_cont{
+.main_cont {
   height: 100vh;
-  background-color: #e9c0ce;
+  background-color: #3e3e3e;
   display: flex;
   font-family: Digital-7 Mono;
 }
 
-.clocker{
-  min-width: 200px;
-  background-color: #ba3636;
-  margin:auto;
+.clocker {
+  min-width: 300px;
+  background-color: #111;
+  margin: auto;
   text-align: center;
   font-size: 0;
+  color: #ff2e00;
+  text-shadow: 0 0 10px #ff2e00;
 }
 
-.hours{
-  font-size: 30pt;
+.hours {
+  font-size: 50pt;
 }
 
-.dots{
-  font-size: 32pt;
+.dots {
+  font-size: 52pt;
+  opacity: 1;
 }
 
-.minutes{
-  font-size: 30pt;
+.minutes {
+  font-size: 50pt;
+}
+
+.blink {
+  animation: blink 1.4s infinite;
+  /* Параметры анимации */
+}
+
+@keyframes blink {
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-duration: 20s;
+  animation-name: fadeIn;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+  1% {
+    opacity: 0.3;
+  }
+
+  2% {
+    opacity: 0.7;
+  }
+  4% {
+    opacity: 0.6;
+  }
+  4% {
+    opacity: 0.8;
+  }
+  6%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
