@@ -31,7 +31,13 @@ html, body{
 
 .hours {
   font-size: 30vw;
+  padding: 0;
+  margin: 0;
+  background-image: url(img/background_numbers.png);
+  background-size: cover;
+  box-shadow: inset 0px 0px 100px 3px #111
 }
+
 
 .dots {
   font-size: 36vw;
@@ -40,6 +46,9 @@ html, body{
 
 .minutes {
   font-size: 30vw;
+  background-image: url(img/background_numbers.png);
+  background-size: cover;
+  box-shadow: inset 0px 0px 100px 3px #111;
 }
 
 .blink {
