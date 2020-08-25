@@ -33,11 +33,24 @@ html, body{
   font-size: 30vw;
   padding: 0;
   margin: 0;
-  background-image: url(img/background_numbers.png);
-  background-size: cover;
-  box-shadow: inset 0px 0px 100px 3px #111
+  z-index: 1;
 }
 
+.hours::before{
+  font-size: 30vw;
+  content: "88";
+  opacity: 0.1;
+  z-index: 1;
+  margin-right: -27.2vw;
+}
+
+.minutes::after{
+  font-size: 30vw;
+  content: "88";
+  opacity: 0.1;
+  z-index: 1;
+  margin-left: -27.2vw;
+}
 
 .dots {
   font-size: 36vw;
@@ -45,10 +58,7 @@ html, body{
 }
 
 .minutes {
-  font-size: 30vw;
-  background-image: url(img/background_numbers.png);
-  background-size: cover;
-  box-shadow: inset 0px 0px 100px 3px #111;
+  font-size: 30vw;;
 }
 
 .blink {
