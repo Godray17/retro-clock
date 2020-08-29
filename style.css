@@ -107,7 +107,15 @@ html, body {
   .clocker {
     height: auto;
   }
+
+  .binary_clocker{
+    display: none;
+  }
+  .toggle_button{
+    display: none;
+  }
 }
+
 
 .toggle_button {
   height: 50px;
