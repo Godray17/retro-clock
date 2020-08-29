@@ -178,6 +178,7 @@ let binary_clocker = document.getElementById("binary_clocker");
 
 let toggle = document.getElementById("toggle");
 toggle.onclick = function() {
-  clocker.classList.toggle("invisible")
   binary_clocker.classList.toggle("invisible")
+  clocker.classList.toggle("invisible")
+
 };
