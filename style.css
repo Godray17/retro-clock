@@ -1,54 +1,48 @@
-html, body{
+html, body {
   height: 100%;
+  line-height: 1;
 }
 
 @font-face {
-    font-family: 'Digital-7 Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Digital-7 Mono'), local('Digital-7-Mono'),
-        url(https://allfont.ru/cache/fonts/digital-7-mono_48b6f9283ab489bdc31ad44d073d6615.woff) format('woff'),
-        url(https://allfont.ru/cache/fonts/digital-7-mono_48b6f9283ab489bdc31ad44d073d6615.ttf) format('truetype');
+  font-family: 'Digital-7 Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Digital-7 Mono'), local('Digital-7-Mono'),
+    url(https://allfont.ru/cache/fonts/digital-7-mono_48b6f9283ab489bdc31ad44d073d6615.woff) format('woff'),
+    url(https://allfont.ru/cache/fonts/digital-7-mono_48b6f9283ab489bdc31ad44d073d6615.ttf) format('truetype');
 }
 
 .main_cont {
   height: 100%;
   background-color: #111;
-  display: flex;
   font-family: Digital-7 Mono;
 }
 
 .clocker {
-  height: 100vh;
-  min-width: 300px;
   background-color: #111;
   text-align: center;
   font-size: 0;
   color: #ff2e00;
   text-shadow: 0 0 10px #ff2e00;
-  margin: auto;
 }
 
 .hours {
   font-size: 30vw;
   padding: 0;
   margin: 0;
-  z-index: 1;
 }
 
-.hours::before{
+.hours::before {
   font-size: 30vw;
   content: "88";
   opacity: 0.1;
-  z-index: 1;
   margin-right: -27.2vw;
 }
 
-.minutes::after{
+.minutes::after {
   font-size: 30vw;
   content: "88";
   opacity: 0.1;
-  z-index: 1;
   margin-left: -27.2vw;
 }
 
@@ -58,7 +52,8 @@ html, body{
 }
 
 .minutes {
-  font-size: 30vw;;
+  font-size: 30vw;
+  ;
 }
 
 .blink {
@@ -90,24 +85,136 @@ html, body{
   2% {
     opacity: 0.7;
   }
+
   4% {
     opacity: 0.6;
   }
+
   4% {
     opacity: 0.8;
   }
-  6%{
+
+  6% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-@media screen and (max-width: 700px)
-
-{
+@media screen and (max-width: 700px) {
   .clocker {
-  height: auto;
+    height: auto;
+  }
 }
+
+.toggle_button {
+  height: 50px;
+  width: 100px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.visible {}
+
+.indicator {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.light{
+  background-color: #fc2323;
+}
+
+.bh_2 {
+  bottom: 80px;
+}
+
+.bm_3 {
+  left: 0;
+  bottom: 160px;
+}
+
+.bm_4 {
+  left: 0;
+  bottom: 240px;
+}
+
+.bm_2 {
+  bottom: 80px;
+}
+
+.bh_1 {
+  bottom: 0;
+}
+
+.bm_1 {
+  bottom: 0;
+}
+
+.bh_01 {
+  right: 0;
+  bottom: 0;
+}
+
+.bm_01 {
+  right: 0;
+  bottom: 0;
+}
+
+.bh_02 {
+  right: 0;
+  bottom: 80px;
+}
+
+.bm_02 {
+  right: 0;
+  bottom: 80px;
+}
+
+.bh_03 {
+  right: 0;
+  bottom: 160px;
+}
+
+.bm_03 {
+  right: 0;
+  bottom: 160px;
+}
+
+.bh_04 {
+  right: 0;
+  bottom: 240px;
+}
+
+.bm_04 {
+  right: 0;
+  bottom: 240px;
+}
+
+.b_hours {
+  width: 150px;
+  position: absolute;
+  left: 15vw;
+  height: 50vh;
+}
+
+.b_min {
+  width: 150px;
+  position: absolute;
+  left: 250px;
+  height: 50vh;
+}
+
+
+.binary_clocker {
+  position: absolute;
+  top: 15vh;
+  left: 19vw;
 }
